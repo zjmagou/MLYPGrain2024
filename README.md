@@ -38,7 +38,7 @@ Download the repo into an empty directory. Install all the packages in `MzjEnv_n
 The following datasets related to this project are available on the internet:
 
 - Raw **AMES NEX GDDP CMIP6** produced by [Thrasher et al., 2022](https://www.nature.com/articles/s41597-022-01393-4) is available on NASA's [NCCS THREDDS Data Server](https://ds.nccs.nasa.gov/thredds/catalog/AMES/NEX/GDDP-CMIP6/catalog.html)
-- Dataset from public source **Observed_data** (compressed folder) is available on Microsoft OneDrive as
+- Dataset from public source **Observed_data** (compressed folder) is available on Microsoft OneDrive as [Observed_data.zip](https://bssgj-my.sharepoint.com/:u:/g/personal/michael_mu13973-binj_basischina_com/ETXlnzOAXLZBhCMZQxf6wxABP9ovb5bY542BR_Asqyb6Xw?e=pUhIKv)
 - Statistically reanalyzed dataset **waves** (compressed folder) is available on Microsoft OneDrive as [waves.zip](https://bssgj-my.sharepoint.com/:u:/g/personal/michael_mu13973-binj_basischina_com/EdjJqEPY27dAlpgWm9at0AsBGfoy3cxeMx9fjZGs1CRW6w?e=f46eGX)
 - Model input dataset **formatted_grid** (compressed folder) is available on Zenodo [DOI](https://doi.org/10.5281/zenodo.10924805)
 - Model projection dataset **final_outputs** (compressed folder) is available on Zenodo [DOI](https://doi.org/10.5281/zenodo.10924805)
