@@ -25,14 +25,16 @@ The following source datasets related to this project are available on their res
 - Statistically reanalyzed dataset **waves** (compressed folder) is available on Microsoft OneDrive as [waves.zip](https://bssgj-my.sharepoint.com/:u:/g/personal/michael_mu13973-binj_basischina_com/EdjJqEPY27dAlpgWm9at0AsBGfoy3cxeMx9fjZGs1CRW6w?e=f46eGX)
 
 The following intermediate datasets are available on Zenodo via [this DOI](https://doi.org/10.5281/zenodo.10924805):
-- Model input dataset **formatted_grid** (compressed folder)
-- Model auxilary files `hwave_order.csv` and `coldwave_order.csv`
+- Model input dataset **formatted_grid** (compressed folder) for ConvAE and RF training, evaluation and future projection
+- ETE threshold datasets `tmax_90.nc` for hot days and `tmin_10.nc` for cold days.
+- Auxilary order files `hwave_order.csv` and `coldwave_order.csv` for projection visualization
 - Model projection dataset **final_outputs** (compressed folder)
-- Raw data used to plot Taylor diagrams and separating yield into ensembles are available (compressed folder)
 
 # Method Structure
 
-Data preprocessing is automated into python files: `cwave.py` and `nasa_cwave.py` converts tasmax and tasmin data into CW and HW frequencies, and `cut_to_size.py` clips climate data to the bounds of the MLYP provinces. Implementation for the methods outlined in this study is structured into notebooks of different functions. Training of ConvAEs is done in `autoencoder.ipynb` and the benchmark model in `yaumain.ipynb`. `modelsort.ipynb` is used to produce `coldwave_order.csv` and `heatwave_order.csv`, which can be found on Zenodo `plots.ipynb` might be useful if figures are to be reproduced. The main notebook where RF Regression is trained and projection is made is`rf_and_models.ipynb`, and it is structured as follows:
+Data preprocessing is automated into python files: `cwave.py` and `nasa_cwave.py` converts tasmax and tasmin data into CW and HW frequencies, and `cut_to_size.py` clips climate data to the bounds of the MLYP provinces.
+
+The models and methods outlined in this study are implemented through Jupyter notebooks of different functions. Training of ConvAEs is done in `autoencoder.ipynb` and the benchmark model in `yaumain.ipynb`. `modelsort.ipynb` is used to produce `coldwave_order.csv` and `heatwave_order.csv`, which can be found on Zenodo `plots.ipynb` might be useful if figures are to be reproduced. The main notebook where RF Regression is trained and projection is made is`rf_and_models.ipynb`, and it is structured as follows:
 
 1. Data preprocessing and auxiliary methods for modeling
 2. ConvAE spatio-temporal (via stAE) / spatial (via sAE) dimension reduction on observed data
