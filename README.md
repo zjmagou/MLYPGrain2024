@@ -19,12 +19,12 @@ AMES NEX GDDP CMIP6 GCM data are in the `/NASA-CMIP/` folder, which needs to be 
 
 Statistically reanalyzed HW and CW frequency data are in the `/waves/` folder, which will be automatically created by`cwave.py` and `nasa_cwave.py` if not created already. Clipped climate data are in the `/formatted_grid/` folder,  which will be automatically created by `cut_to_size.py` if not created already. Output data will be stored automatically in `/final_output/`.
 
-The following source datasets related to this project are available on their respective locations:
+The following ***source datasets*** related to this project are available on their respective locations:
 - Raw **AMES NEX GDDP CMIP6** produced by [Thrasher et al., 2022](https://www.nature.com/articles/s41597-022-01393-4) is available on NASA's [NCCS THREDDS Data Server](https://ds.nccs.nasa.gov/thredds/catalog/AMES/NEX/GDDP-CMIP6/catalog.html)
 - Dataset from public source **Observed_data** (compressed folder) is available on Microsoft OneDrive as [Observed_data.zip](https://bssgj-my.sharepoint.com/:u:/g/personal/michael_mu13973-binj_basischina_com/ETXlnzOAXLZBhCMZQxf6wxABP9ovb5bY542BR_Asqyb6Xw?e=pUhIKv)
 - Statistically reanalyzed dataset **waves** (compressed folder) is available on Microsoft OneDrive as [waves.zip](https://bssgj-my.sharepoint.com/:u:/g/personal/michael_mu13973-binj_basischina_com/EdjJqEPY27dAlpgWm9at0AsBGfoy3cxeMx9fjZGs1CRW6w?e=f46eGX)
 
-The following intermediate datasets are available on Zenodo via [this DOI](https://doi.org/10.5281/zenodo.10924805):
+The following ***intermediate datasets*** are available on Zenodo via [this DOI](https://doi.org/10.5281/zenodo.10924805):
 - Model input dataset **formatted_grid** (compressed folder) for ConvAE and RF training, evaluation and future projection
 - ETE threshold datasets `tmax_90.nc` for hot days and `tmin_10.nc` for cold days.
 - Auxilary order files `hwave_order.csv` and `coldwave_order.csv` for projection visualization
@@ -48,6 +48,6 @@ The models and methods outlined in this study are implemented through Jupyter no
 
 Download the repo into an empty directory. Install all the packages in `MzjEnv_new.yaml`. It is strongly recommended to import the YAML into a compatible package manager (such as Anaconda) and create a new virtual environment dedicated to this project.
 
-The **intermediate datasets** are required for a reproduction of the study's proposed model. A minimum storage of 13 GB will be needed for reproducing the proposed model with trained autoencoders.
+The ***intermediate datasets*** are required for a reproduction of the study's proposed model. A minimum storage of 13 GB will be needed for reproducing the proposed model with trained autoencoders.
 
-The **source datasets** are required for a full reproduction of the study's data analysis. A minimum storage of 10 TB will be needed for reproducing the proposed model with trained autoencoders AND results related to ScenarioMIP future projection experiments. You will need to collect related variables and data of AMES NEX GDDP CMIP6 and format the file structure into the one outlined in previous subsections.
+The ***source datasets*** are required for a full reproduction of the study's data analysis. A minimum storage of 10 TB will be needed for reproducing the proposed model with trained autoencoders AND results related to ScenarioMIP future projection experiments. You will need to collect related variables and data of AMES NEX GDDP CMIP6 and format the file structure into the one outlined in previous subsections.
