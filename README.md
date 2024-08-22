@@ -49,3 +49,5 @@ Download the repo into an empty directory. Install all the packages in `MzjEnv_n
 The ***intermediate datasets*** are required for a reproduction of the study's proposed model. A minimum storage of 13 GB will be needed for reproducing the proposed model with trained autoencoders.
 
 The ***source datasets*** are required for a full reproduction of the study's data analysis. A minimum storage of 10 TB will be needed for reproducing the proposed model with trained autoencoders AND results related to ScenarioMIP future projection experiments. You will need to collect related variables and data of AMES NEX GDDP CMIP6 and format the file structure into the one outlined in previous subsections.
+
+Benchmark experiment with B2-RF can be found in `rf_and_models.ipynb`. Certain independent pellucid implementations of the study's methods may have not been included. We welcome information / inquiries.
