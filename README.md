@@ -32,7 +32,7 @@ The following ***intermediate datasets*** are available on Zenodo via [this DOI]
 
 Data preprocessing is automated into python files: `cwave.py` and `nasa_cwave.py` converts tasmax and tasmin data into CW and HW frequencies, and `cut_to_size.py` clips climate data to the bounds of the MLYP provinces.
 
-The models and methods outlined in this study are implemented through Jupyter notebooks of different functions. Training of ConvAEs is done in `autoencoder.ipynb` and the benchmark model in `yaumain.ipynb`. `modelsort.ipynb` is used to produce `coldwave_order.csv` and `heatwave_order.csv`, which can be found on Zenodo. `plots.ipynb` might be useful if figures are to be reproduced. The main notebook where RF Regression is trained and projection is made is`rf_and_models.ipynb`, and it is structured as follows:
+The models and methods outlined in this study are implemented through Jupyter notebooks of different functions. Training of ConvAEs is done in `autoencoder.ipynb`. `modelsort.ipynb` is used to produce `coldwave_order.csv` and `heatwave_order.csv`, which can be found on Zenodo. `plots.ipynb` might be useful if figures are to be reproduced. The main notebook where RF Regression is trained and projection is made is`rf_and_models.ipynb`, and it is structured as follows:
 
 1. Data preprocessing and auxiliary methods for modeling
 2. ConvAE spatio-temporal (via stAE) / spatial (via sAE) dimension reduction on observed data
